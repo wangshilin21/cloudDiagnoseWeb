@@ -17,6 +17,9 @@
     <link href="../fonts/googleFonts.css" rel="stylesheet">
 
     <!-- Vendor CSS Files -->
+    <!--    引入Bootstrap-Table-->
+    <link href="../assets/vendor/bootstrap-table/dist/bootstrap-table.css" rel="stylesheet">
+
     <link href="../assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="../assets/vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="../assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -62,27 +65,213 @@
 
 <div class="container">
     <div class="mainArea">
-        <div id="projectTitle" class="centerText" style="font-size: 20px;color:white">
+        <div id="projectTitle" class="centerText" style="font-size: 28px;color:white;height:50px">
             VW316-6-CN
         </div>
         <div id="projectInformation">
-           <div class="projectInfoItem centerText" style="font-size: 18px">
-           项目描述
-           </div>
+            <div class="projectInfoItem centerText" style="font-size: 25px">
+                项目描述
+            </div>
             <div id="inputDescription">
                 <textarea id="projectDescription" rows="5" cols="100"></textarea>
-        </div>
-            <div class="projectInfoItem centerText" style="font-size: 18px">
+            </div>
+            <div class="projectInfoItem centerText" style="font-size: 25px">
                 PDX
             </div>
-            <div id="pdxBackground">
-                <div id="pdxChooseBtn" class="btn">选择文件</div>
-                <div id="pdxName" class="centerText">VW316_20200315_version2</div>
-                <div id="pdxUpload">上传PDX</div>
+            <div id="pdxBack">
+                <div class="vbvItem" style="font-weight: bold">
+                    PDX上传：
+                </div>
+                <div class="pdxBackground">
+                    <div class="pdxName centerText">VW316_20200315_version2</div>
+                    <div class="pdxChooseBtn btn btn-primary">选择文件</div>
+                </div>
+                <div class="pdxUpload btn btn-success centerText">上传PDX
+                </div>
+            </div>
+            <div class="projectInfoItem centerText" style="font-size: 25px">
+                VBV
+            </div>
+            <div class="vbvBack">
+                <div class="vbvList"
+                     style="background-color: white;margin-top: 10px;margin-left: 35px;margin-right: 35px">
+                    <table class="table" data-toggle="table">
+                        <thead>
+                        <tr>
+                            <th>已有的VBV文件</th>
+                        </tr>
+                        </thead>
+                        <tbody class="scrollTbody">
+                        <tr>
+                            <td>VBV_20200315_002</td>
+                        </tr>
+                        <tr>
+                            <td>VBV_20200315_003</td>
+                        </tr>
+                        <tr>
+                            <td>VBV_20200315_004</td>
+                        </tr>
+                        <tr>
+                            <td>VBV_20200315_005</td>
+                        </tr>
+                        <tr>
+                            <td>VBV_20200315_006</td>
+                        </tr>
+                        <tr>
+                            <td>VBV_20200315_007</td>
+                        </tr>
+                        <tr>
+                            <td>VBV_20200315_004</td>
+                        </tr>
+                        <tr>
+                            <td>VBV_20200315_005</td>
+                        </tr>
+                        <tr>
+                            <td>VBV_20200315_006</td>
+                        </tr>
+                        <tr>
+                            <td>VBV_20200315_007</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="vbvItem" style="font-weight: bold">
+                    VBV名称: <input type="text" size="70" style="margin-left:20px" name="vbvname">
+                </div>
+                <div class="vbvItem" style="font-weight: bold">
+                    VBV描述: <input type="text" size="70" style="margin-left:20px" name="vbvname">
+                </div>
+                <div class="vbvItem" style="font-weight: bold">
+                    VBV上传:
+                    <div class="pdxBackground">
+                        <div class="pdxName centerText">VBV_20200315_002</div>
+                        <div class="pdxChooseBtn btn btn-primary">选择文件</div>
+                    </div>
+
+                </div>
+                <div class="pdxUpload btn btn-success centerText">上传VBV
+                </div>
+            </div>
+            <div class="projectInfoItem centerText" style="font-size: 25px">
+                ZDC
+            </div>
+            <div class="vbvBack" id="zdcBack">
+                <div class="vbvList"
+                     style="background-color: white;margin-top: 10px;margin-left: 35px;margin-right: 35px">
+                    <table class="table" data-toggle="table">
+                        <thead>
+                        <tr>
+                            <th>已有的ZDC文件</th>
+                        </tr>
+                        </thead>
+                        <tbody class="scrollTbody">
+                        <tr>
+                            <td>ZDC_20200315_002</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_003</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_004</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_005</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_006</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_007</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_004</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_005</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_006</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_007</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="vbvItem" style="font-weight: bold">
+                    ZDC上传:（仅支持.zip）
+                    <div class="pdxBackground">
+                        <div class="pdxName centerText">ZDC_20200315_002</div>
+                        <div class="pdxChooseBtn btn btn-primary">选择文件</div>
+                    </div>
+
+                </div>
+                <div class="pdxUpload btn btn-success centerText">上传ZDC
+                </div>
+            </div>
+            <div class="projectInfoItem centerText" style="font-size: 25px">
+                FLASH
+            </div>
+            <div class="vbvBack" id="flashBack">
+                <div class="vbvList"
+                     style="background-color: white;margin-top: 10px;margin-left: 35px;margin-right: 35px">
+                    <table class="table" data-toggle="table">
+                        <thead>
+                        <tr>
+                            <th>已有的FLASH文件</th>
+                        </tr>
+                        </thead>
+                        <tbody class="scrollTbody">
+                        <tr>
+                            <td>ZDC_20200315_002</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_003</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_004</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_005</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_006</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_007</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_004</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_005</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_006</td>
+                        </tr>
+                        <tr>
+                            <td>ZDC_20200315_007</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="vbvItem" style="font-weight: bold">
+                    FLASH上传:（仅支持.zip）
+                    <div class="pdxBackground">
+                        <div class="pdxName centerText">ZDC_20200315_002</div>
+                        <div class="pdxChooseBtn btn btn-primary">选择文件</div>
+                    </div>
+
+                </div>
+                <div class="pdxUpload btn btn-success centerText" >上传FLASH
+                </div>
+            </div>
+
+            <div class="pdxUpload btn btn-success centerText" id="projectCommit">保存
             </div>
         </div>
     </div>
-    </div>
+</div>
 </div>
 
 <!-- ======= Individual ECU Block Panel======= -->
@@ -125,7 +314,8 @@
 <script src="../assets/vendor/jquery-cookie/js.cookie.js"></script>
 <script src="../assets/vendor/progressbar/progressbar.js"></script>
 <script src="../assets/vendor/nprogress/nprogress.js"></script>
-
+<script src="../assets/vendor/bootstrap-table/dist/bootstrap-table.js"></script>
+<script src="../assets/vendor/bootstrap-table/dist/locale/bootstrap-table-zh-CN.min.js"></script>
 <!-- Template Main JS File -->
 <script src="../assets/js/main.js"></script>
 
