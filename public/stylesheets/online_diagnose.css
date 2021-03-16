@@ -1,0 +1,282 @@
+/**
+ * This CSS file is used for integrated style sheet of HTML VCI_Interface
+ * Author: Zheng Haitao
+ * Date: 2020.10.12
+ */
+
+/*--------------------------------------------------------------
+# ECU Section样式
+--------------------------------------------------------------*/
+#assemble-trigger:hover{
+    cursor: pointer;
+}
+
+.ecu_section{
+    background-image: url("../images/vw_ID.png");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 750px;
+}
+
+.nav-fixed{
+    position: sticky;
+    top: 70px;
+    z-index: 1000;
+}
+/*--------------------------------------------------------------
+# ECU 卡片样式
+--------------------------------------------------------------*/
+.ecuList {
+    background: #f5f9fc;
+    /*background-image: url("../images/ecu_list_bg.jpg");*/
+    background-size: cover;
+    padding: 30px 0 30px 0;
+}
+
+.ecuList .member {
+    text-align: center;
+    margin-bottom: 30px;
+    opacity: 1;
+}
+
+.ecuList .member .pic {
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.ecuList .member .ecuName {
+    transition: all ease-in-out 0.2s;
+}
+
+.ecuList .member :hover .ecuName {
+    transform: scale(1.1);
+}
+
+.ecuList .member .member-info {
+    height: 110px;
+    bottom: -48px;
+    left: 20px;
+    right: 20px;
+    background: linear-gradient(360deg, #5c768d 0%, rgba(92, 118, 141, 0.9) 35%, rgba(140, 167, 191, 0.8) 100%);
+    /*background-image: url("../images/card-bg1.jpg");*/
+    background-size: cover;
+    padding: 15px 0;
+    border-radius: 4px;
+}
+
+.ecuList .member h4 {
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.ecuList .member h4::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #fff;
+    bottom: 0;
+    left: calc(50% - 25px);
+}
+
+.ecuList .member span {
+    font-style: italic;
+    display: block;
+    font-size: 13px;
+    color: #fff;
+}
+
+.ecuList .member .social {
+    margin-top: 15px;
+}
+
+.ecuList .member .social a {
+    transition: color 0.3s;
+    color: #fff;
+}
+
+.ecuList .member .social a:hover {
+    color: #9eccf4;
+}
+
+.ecuList .member .social i {
+    font-size: 16px;
+    margin: 0 2px;
+}
+
+@media (max-width: 992px) {
+    .ecuList .member {
+        margin-bottom: 40px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .ecuList {
+        background: #f5f9fc;
+        padding: 30px 0 30px 0;
+    }
+}
+
+
+/*自定义不可用的按钮格式*/
+.btn-deactivate {
+    color: black;
+    background-color: #A9A9A9;
+    border-color: #A9A9A9;
+}
+
+.btn-deactivate:hover {
+    color: #fff;
+    background-color: #9c9c9c;
+    border-color: #9c9c9c;
+}
+
+.btn-deactivate:focus, .btn-deactivate.focus {
+    color: #fff;
+    background-color: #626262;
+    border-color: #626262;
+    box-shadow: 0 0 0 0.2rem rgba(98, 98, 98, 0.5);
+}
+
+.btn-deactivate.disabled, .btn-deactivate:disabled {
+    color: #fff;
+    background-color: #C0C0C0;
+    border-color: #C0C0C0;
+}
+
+.btn-deactivate:not(:disabled):not(.disabled):active, .btn-deactivate:not(:disabled):not(.disabled).active,
+.show > .btn-deactivate.dropdown-toggle {
+    color: #fff;
+    background-color: #9c9c9c;
+    border-color: #9c9c9c;
+}
+
+.btn-deactivate:not(:disabled):not(.disabled):active:focus, .btn-deactivate:not(:disabled):not(.disabled).active:focus,
+.show > .btn-deactivate.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+}
+
+
+/*自定义不可用的按钮格式*/
+[data-loader]
+{
+    margin: 5px;
+}
+[data-loader='circle']
+{
+    width: 25px;
+    height: 25px;
+
+    -webkit-animation: circle infinite .75s linear;
+    -moz-animation: circle infinite .75s linear;
+    -o-animation: circle infinite .75s linear;
+    animation: circle infinite .75s linear;
+
+    border: 2px solid #dbd211;
+    border-top-color: transparent;
+    border-radius: 100%;
+}
+[data-loader='circle-side']
+{
+    position: relative;
+
+    width: 25px;
+    height: 25px;
+
+    -webkit-animation: circle infinite .75s linear;
+    -moz-animation: circle infinite .75s linear;
+    -o-animation: circle infinite .75s linear;
+    animation: circle infinite .75s linear;
+
+    border: 2px solid #fff;
+    border-top-color: rgba(0, 0, 0, .2);
+    border-right-color: rgba(0, 0, 0, .2);
+    border-bottom-color: rgba(0, 0, 0, .2);
+    border-radius: 100%;
+}
+
+@-webkit-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+.ecu_loader{
+    position: absolute;
+    left: auto;
+    display: none;
+}
+
+/*ECU Name 模块的样式*/
+.ecuName:hover{
+    cursor:pointer
+}

@@ -1,0 +1,305 @@
+/**
+ * This CSS file is used for integrated style sheet of HTML VCI_Interface
+ * Author: Zheng Haitao
+ * Date: 2020.10.12
+ */
+
+/*--------------------------------------------------------------
+# ECU Block卡片样式
+--------------------------------------------------------------*/
+#left-bg{
+    /*position: absolute;*/
+    width: 190px;
+    height: 802px;
+    margin-top: 136px;
+    background-image: url("../images/online_diagnose_side_right.png");
+    background-size: cover;
+    background-attachment: initial;
+    position: fixed;
+    opacity: 0.7;
+}
+
+#right-bg{
+    /*position: absolute;*/
+    width: 190px;
+    height: 802px;
+    right: 0;
+    margin-top: 136px;
+    background-image: url("../images/online_diagnose_side_right.png");
+    background-size: cover;
+    background-attachment: initial;
+    position: fixed;
+    opacity: 0.7;
+}
+
+@media (max-width: 1500px) {
+    #left-bg{
+        display: none;
+    }
+
+    #right-bg{
+        display: none;
+    }
+}
+
+.nav-fixed{
+    position: sticky;
+    top: 70px;
+    z-index: 1000;
+}
+
+#ecu-block-panel{
+    /*background-image: url("../images/test.jpg");*/
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 750px;
+}
+
+#ecu-block-panel .container{
+
+}
+
+#vin-number-ecu{
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    height: 40px;
+    margin-top: -40px;
+    margin-bottom: 25px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(220,220,220,0.4);
+}
+
+#ecu-block-panel .ecu-block-wrap{
+    height: auto;
+    color: black;
+    margin-bottom: 2rem;
+    border-radius: 5px;
+    /*background-image: url("../images/card-bg2.jpg");*/
+    /*background-color: rgba(176,196,222,0.7);*/
+    background-color: rgba(220,220,220,0.7);
+}
+
+#ecu-block-panel h5{
+    font-weight: bold;
+    padding-left: 1rem;
+    padding-top: 1.5rem;
+}
+
+#ecu-block-panel .action-panel{
+    padding-top: 1rem;
+}
+
+
+.action-panel .assemble-wrap{
+    height: 115px;
+    margin-bottom: 1.5rem;
+}
+
+.assemble-wrap .part-info-wrap{
+    height: 80%;
+    padding-top: 1rem;
+}
+
+.part-info-wrap .part-info-item{
+    border: 1px solid white;
+    height: 95%;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.part-info-item .part-res-status{
+    position: absolute;
+    left: 0;
+    height: 26px;
+    width: 26px;
+    padding: 0;
+    opacity: 0.7;
+    display: none;
+}
+
+.part-info-wrap .part-info-btn{
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+}
+
+.part-info-item h6{
+    padding-bottom: 1rem;
+    padding-top: 0.3rem;
+}
+
+.part-info-item .par-info{
+    width: 100%;
+    font-size: 13px;
+}
+
+.par-info .soll-warp{
+    justify-content: space-between;
+}
+
+.num-soll{
+    display: none;
+}
+
+.num-ist{
+    display: none;
+}
+
+
+
+.action-panel h6{
+    padding-left: 0.5em;
+    height: 10%;
+    font-weight: bold;
+}
+
+.action-panel .zdc-wrap{
+    border-left: 2px solid white;
+    height: 115px;
+    margin-bottom: 1.5rem;
+}
+
+@media (max-width: 992px) {
+    .action-panel .zdc-wrap{
+        border-left: 0;
+        height: 115px;
+        margin-bottom: 1.5rem;
+    }
+}
+
+
+.zdc-wrap .zdc-info-wrap{
+    height: 80%;
+    padding-top: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.zdc-info-wrap .zdc-item-wrap{
+    width: 45%;
+    height: 95%;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.3rem;
+    margin-left: 0.3rem;
+}
+
+.loader-wrap{
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    border-right: 1px solid white;
+}
+
+
+
+.action-panel .flash-wrap{
+    border-left: 2px solid white;
+    height: 115px;
+    margin-bottom: 1.5rem;
+}
+
+.flash-wrap .flash-info-wrap{
+    border: 1px solid white;
+    height: 80%;
+    padding-top: 1rem;
+}
+
+
+
+/*自定义不可用的按钮格式*/
+[data-loader]
+{
+    margin: 5px;
+}
+[data-loader='circle']
+{
+    width: 55px;
+    height: 55px;
+
+    -webkit-animation: circle infinite .75s linear;
+    -moz-animation: circle infinite .75s linear;
+    -o-animation: circle infinite .75s linear;
+    animation: circle infinite .75s linear;
+
+    border: 3px solid white;
+    border-top-color: transparent;
+    border-radius: 100%;
+}
+
+@-webkit-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-moz-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@-o-keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes circle
+{
+    0%
+    {
+        -webkit-transform: rotate(0);
+        -ms-transform: rotate(0);
+        -o-transform: rotate(0);
+        transform: rotate(0);
+    }
+    100%
+    {
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}

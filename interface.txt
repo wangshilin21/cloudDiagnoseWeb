@@ -1,0 +1,318 @@
+1 lock/unlock plug, reply ecu list and lock the key
+{
+    function: 1;
+    key: 123;
+    carType: "AU49X"; //为以后保留
+    action: //0 unlock 1 lock
+}
+
+
+{
+    function: 1;
+    key: 123;
+    result: 0, 1, 2 //分别表示操作成功/失败/异常；失败的原因可能是该插头已经被其他客户端锁定，异常的原因可能是插头通信中断导致插头全局变量被删除
+    ecuList: [ //操作成功时有效
+        {
+            ecuName："GWA"
+        },
+    ];
+    keyList: [ //操作失败时有效
+        {
+            key：123,
+            locked: 0, 1//分别表示操作未锁定和锁定；
+        },
+    ]
+}
+
+2 installation check, reply check result list
+{
+    function: 2;
+    key: 123;
+    carType: "VW326";
+}
+
+{
+    function: 2;
+    key: 123;
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+}
+
+
+
+3 ZDC write, reply ZDC write result
+{
+    function: 3;
+    key: 123;
+    carType: "VW326";
+    ecuName: "GWA";
+}
+
+{
+    function: 3;
+    key: 123;
+    ecuName: "GWA";
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+}
+
+4 horn test, reply result
+{
+    function: 4;
+    key: 123;
+    carType: "VW326";
+}
+
+{
+    function: 4;
+    key: 123;
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+}
+
+5 alarm light test, reply result
+{
+    function: 5;
+    key: 123;
+    carType: "VW326";
+    action: //0 打开， 1关闭
+}
+
+{
+    function: 5;
+    key: 123;
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+}
+
+6 Low beam test, reply result
+{
+    function: 6;
+    key: 123;
+    carType: "VW326";
+    action: //0 打开， 1关闭
+}
+
+{
+    function: 6;
+    key: 123;
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+}
+
+7 High beam test, reply result
+{
+    function: 7;
+    key: 123;
+    carType: "VW326";
+    action: //0 打开， 1关闭
+}
+
+{
+    function: 7;
+    key: 123;
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+}
+
+8 trunk test, reply result
+{
+    function: 8;
+    key: 123;
+    carType: "VW326";
+    action: //0 打开， 1关闭
+}
+
+{
+    function: 8;
+    key: 123;
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+}
+
+9 window test, reply result
+{
+    function: 9;
+    key: 123;
+    carType: "VW326";
+    action: //0 打开， 1关闭
+    position: //FL:0 FR:1 RL:2 RR:3---4个车窗同时操作，由前端来进行封装
+}
+
+{
+    function: 9;
+    key: 123;
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+}
+
+10 ECU installation check, reply check result
+{
+    function: 10;
+    key: 123;
+    carType: "VW326";
+    ecuName: "GWA";
+}
+
+{
+    function: 10;
+    key: 123;
+    ecuName: "GWA";
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+}
+
+11 ECU flash, reply result
+{
+    function: 11;
+    key: 123;
+    carType: "VW326";
+    ecuName: "GET";
+}
+
+{
+    function: 11;
+    key: 123;
+    ecuName: "GET";
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+}
+
+12 operation cancel, reply result
+{
+    function: 12;
+    key: 123;
+    carType: "VW326";
+    ecuName: "GET";
+}
+
+{
+    function: 12;
+    key: 123;
+    ecuName: "GET";
+    result: 0, 1  //0 正常进行, 1 异常；异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定;或者逻辑连接不存在（包括非在线状态）
+}
+
+以下查询可以周期/非周期：当结果为成功/失败/异常时停止查询
+
+101 request plug, reply plug list
+{
+    function: 101;
+}
+
+
+{
+    function: 101;
+    keyList: [
+        {
+            key：123,
+            locked: 0, 1//分别表示操作未锁定和锁定； 
+        }
+        ......
+    ]
+}
+
+102 request installation result
+{
+    function: 102;
+    key: 123;
+}
+
+{
+    function: 102;
+    key: 123;
+    result: 0, 1  //0 正常进行, 1 异常；失败异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+    installationStatusList: [ //result为0时，才有意义
+        {
+            ecuName: "GWA",
+            swv: {
+                soll: String
+                ist: String
+            }
+            hwv: {
+                soll: String
+                ist: String
+            }
+            tnr: {
+                soll: String
+                ist: String
+            }
+            zdc: -2, -1, 0, 1, 2 // -2 不涉及ZDC, -1 未开始check, 0 进行中, 1 成功, 2 失败/异常
+        }
+        ......
+    ]
+}
+
+103 request zdc write result
+{
+    function: 103;
+    key: 123;
+    ecuName: "GWA",
+}
+
+{
+    function: 103;
+    key: 123;
+    ecuName: "GWA",
+    result: // -2 不涉及ZDC, -1 未开始, 0 进行中, 1 成功, 2 失败/异常
+}
+
+
+104-109 request control test result
+{
+    function: 104;
+    key: 123;
+}
+
+{
+    function: 104;
+    key: 123;
+    result: // -1 未开始, 0 进行中, 1 成功, 2 失败/异常
+}
+
+110 request ecu installation result
+{
+    function: 110;
+    key: 123;
+    ecuName: "GWA",
+}
+
+{
+    function: 110;
+    key: 123;
+    result: 0, 1  //0 正常进行, 1 异常；失败异常的原因可能是插头通信中断导致插头全局变量被删除，也可能是插头没有被锁定
+    installationStatus: { //result为0时，才有意义
+            ecuName: "GWA",
+            swv: {
+                soll: String
+                ist: String
+            }
+            hwv: {
+                soll: String
+                ist: String
+            }
+            tnr: {
+                soll: String
+                ist: String
+            }
+            zdc: -2, -1, 0, 1, 2 // -2 不涉及ZDC, -1 未开始check, 0 进行中, 1 成功, 2 失败/异常
+        }
+}
+
+111 request flash write result
+{
+    function: 111;
+    key: 123;
+    ecuName: "GWA",
+}
+
+{
+    function: 111;
+    key: 123;
+    ecuName: "GWA",
+    result: // -2 不涉及ZDC, -1 未开始, 0 进行中, 1 成功, 2 失败/异常
+}
+
+112 request operation  cancle result
+{
+    function: 112;
+    key: 123;
+    ecuName: "GWA",
+}
+
+{
+    function: 112;
+    key: 123;
+    ecuName: "GWA",
+    result: // -1 未开始, 0 进行中, 1 成功, 2 失败/异常
+}

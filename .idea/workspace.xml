@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="279ee831-5908-42b2-8c96-cf6f48d66686" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1pSqDQNCtXmwWil3zCW0sLuxJRV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public/html" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.General" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\CloudDiagnose_Web_2021\public\html" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="project.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/CloudDiagnose_Web_2021/public/html/project.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.project.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="279ee831-5908-42b2-8c96-cf6f48d66686" name="Default Changelist" comment="" />
+      <created>1615186718918</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1615186718918</updated>
+      <workItem from="1615186720040" duration="509000" />
+      <workItem from="1615187494680" duration="228000" />
+      <workItem from="1615187732411" duration="3494000" />
+      <workItem from="1615254180345" duration="14853000" />
+      <workItem from="1615335913108" duration="4296000" />
+      <workItem from="1615425973847" duration="16218000" />
+      <workItem from="1615509551247" duration="9301000" />
+      <workItem from="1615530067123" duration="6405000" />
+      <workItem from="1615770394246" duration="18974000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="686" y="235" key="FileChooserDialogImpl" timestamp="1615517764040">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="549" y="186" key="FileChooserDialogImpl/-1920.0.1920.1030/0.0.1536.920@0.0.1536.920" timestamp="1615448947192" />
+    <state x="686" y="235" key="FileChooserDialogImpl/-1920.0.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1615429621565" />
+    <state x="686" y="235" key="FileChooserDialogImpl/-1920.0.1920.1160/0.0.1920.1160@0.0.1920.1160" timestamp="1615517764040" />
+    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1615254594986" />
+    <state x="393" y="266" width="998" height="869" key="SettingsEditor" timestamp="1615431884733">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="393" y="266" width="998" height="869" key="SettingsEditor/-1920.0.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1615431884733" />
+    <state x="660" y="392" width="803" height="752" key="find.popup" timestamp="1615788470657">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="585" y="230" width="803" height="752" key="find.popup/-1920.0.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1615433816927" />
+    <state x="660" y="392" width="803" height="752" key="find.popup/-1920.0.1920.1160/0.0.1920.1160@0.0.1920.1160" timestamp="1615788470657" />
+    <state x="447" y="145" width="642" height="534" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1615536596910" />
+    <state x="531" y="206" width="840" height="955" key="search.everywhere.popup" timestamp="1615444721512">
+      <screen x="0" y="0" width="1920" height="1160" />
+    </state>
+    <state x="531" y="206" width="840" height="955" key="search.everywhere.popup/-1920.0.1920.1040/0.0.1920.1160@0.0.1920.1160" timestamp="1615444721512" />
+    <state x="425" y="146" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1615258065059" />
+  </component>
+</project>

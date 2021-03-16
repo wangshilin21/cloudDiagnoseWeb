@@ -1,0 +1,66 @@
+/**
+ * This CSS file is used for integrated style sheet of HTML VCI_Interface
+ * Author: Zheng Haitao
+ * Date: 2020.10.12
+ */
+
+/*自定义不可用的按钮格式*/
+.ecu_section{
+    background-image: url("../images/plug_page_bg.png");
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 750px;
+}
+
+.card{
+    background-color: rgba(255,255,255,0.8);
+}
+
+.btn-deactivate {
+    color: #fff;
+    background-color: #A9A9A9;
+    border-color: #A9A9A9;
+}
+
+.btn-deactivate:hover {
+    color: #fff;
+    background-color: #808080;
+    border-color: #808080;
+}
+
+.btn-deactivate:focus, .btn-deactivate.focus {
+    color: #fff;
+    background-color: #9c9c9c;
+    border-color: #9c9c9c;
+    box-shadow: 0 0 0 0.2rem rgba(195, 195, 195, 0.5);
+}
+
+.btn-deactivate.disabled, .btn-deactivate:disabled {
+    color: #fff;
+    background-color: #C0C0C0;
+    border-color: #C0C0C0;
+}
+
+.btn-deactivate:not(:disabled):not(.disabled):active, .btn-deactivate:not(:disabled):not(.disabled).active,
+.show > .btn-deactivate.dropdown-toggle {
+    color: #fff;
+    background-color: #9c9c9c;
+    border-color: #9c9c9c;
+}
+
+.btn-deactivate:not(:disabled):not(.disabled):active:focus, .btn-deactivate:not(:disabled):not(.disabled).active:focus,
+.show > .btn-deactivate.dropdown-toggle:focus {
+    box-shadow: 0 0 0 0.2rem rgba(58, 176, 195, 0.5);
+}
+
+/*加载旋转按钮div格式*/
+.loader_div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -100;
+    opacity: 0;
+}
+
