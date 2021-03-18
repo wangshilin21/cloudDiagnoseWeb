@@ -56,42 +56,76 @@
     <div class="container">
         <div class="d-flex justify-content-between align-items-center" style="color: #1b1e21">
             <h2 style="font-size: 23px;font-weight:bold;color:#1c5c93">项目列表</h2>
-            <a href="projectEdit.html" class='btn btn-primary' style="background-color: #1c5c93"><i class='icon icon-plus'></i> + 创建新项目</a>
-<!--            在此处添加跳转链接，跳转至新项目创建-->
+            <a class='btn btn-primary' id="createNewProject" style="background-color: #1c5c93;color:white"><i
+                    class='icon icon-plus'></i> + 创建新项目</a>
+            <!--            在此处添加跳转链接，跳转至新项目创建-->
         </div>
     </div>
 </section><!-- Breadcrumbs Section -->
 
 <div class="container">
-        <div id="projectList" class="row">
-            <div class="projectName col-lg-3">
-                <div class="projectBtn" onclick="window.location.href='/VCI_Interface.html';">
-                    <div class="projectText">VW316-6-CN</div>
-                </div>
-            </div>
-            <div class="projectName col-lg-3">
-                <div class="projectBtn">
-                    <div class="projectText">VW316-6-CN</div>
-                </div>
-            </div>
-            <div class="projectName col-lg-3">
-                <div class="projectBtn">
-                    <div class="projectText">VW316-6-CN</div>
-                </div>
-            </div>
-            <div class="projectName col-lg-3">
-                <div class="projectBtn">
-                    <div class="projectText">VW316-6-CN</div>
-                </div>
-            </div>
-            <div class="projectName col-lg-3">
-                <div class="projectBtn">
-                    <div class="projectText">VW316-6-CN</div>
-                </div>
+    <div id="projectList" class="row">
+        <div class="projectName col-lg-3">
+            <div class="projectBtn" onclick="window.location.href='projectEdit.html';">
+                <div class="projectText">VW316-6-CN</div>
             </div>
         </div>
+        <div class="projectName col-lg-3">
+            <div class="projectBtn">
+                <div class="projectText">VW316-6-CN</div>
+            </div>
+        </div>
+        <div class="projectName col-lg-3">
+            <div class="projectBtn">
+                <div class="projectText">VW316-6-CN</div>
+            </div>
+        </div>
+        <div class="projectName col-lg-3">
+            <div class="projectBtn">
+                <div class="projectText">VW316-6-CN</div>
+            </div>
+        </div>
+        <div class="projectName col-lg-3">
+            <div class="projectBtn">
+                <div class="projectText">VW316-6-CN</div>
+            </div>
+        </div>
+    </div>
 </div>
 
+<!--隐藏的弹出窗口-->
+<div class="modal fade" id="newProject" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+<!--                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span-->
+<!--                        aria-hidden="true">×</span></button>-->
+                <h4 class="modal-title" id="newProjectLabel" style="font-size: 20px;font-weight: bold">创建新项目</h4>
+            </div>
+            <div class="modal-body">
+
+                <div class="form-group">
+                    <label for="txt_departmentname">项目名称</label>
+                    <input type="text" name="txt_departmentname" class="form-control" id="txt_departmentname"
+                           placeholder="">
+                </div>
+                <div class="form-group">
+                    <label for="txt_parentdepartment">项目描述</label>
+                    <input type="text" name="txt_parentdepartment" class="form-control" id="txt_parentdepartment"
+                           placeholder="">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal"><span
+                        class="glyphicon glyphicon-remove" aria-hidden="true" style="border-color: gray "></span>关闭
+                </button>
+                <button type="button" id="btn_submit" class="btn btn-primary" data-dismiss="modal"><span
+                        class="glyphicon glyphicon-floppy-disk" aria-hidden="true"></span>保存
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
 <!-- ======= Individual ECU Block Panel======= -->
 <!--<section id="ecu-block-panel">-->
 
@@ -137,8 +171,8 @@
 <script src="../assets/js/main.js"></script>
 
 <!-- Import the custom js function for this page-->
-<script src="../javascripts/ecu_control.js"></script>
-
+<!--<script src="../javascripts/ecu_control.js"></script>-->
+<script src="../javascripts/project.js"></script>
 
 </body>
 </html>

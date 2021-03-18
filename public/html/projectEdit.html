@@ -65,17 +65,17 @@
 
 <div class="container">
     <div class="mainArea">
-        <div id="projectTitle" class="centerText" style="font-size: 28px;color:white;height:50px">
+        <div id="projectTitle" class="centerText">
             VW316-6-CN
         </div>
         <div id="projectInformation">
-            <div class="projectInfoItem centerText" style="font-size: 25px">
-                项目描述
-            </div>
-            <div id="inputDescription">
-                <textarea id="projectDescription" rows="5" cols="100"></textarea>
-            </div>
-            <div class="projectInfoItem centerText" style="font-size: 25px">
+<!--            <div class="projectInfoItem centerText" style="font-size: 25px">-->
+<!--                项目描述-->
+<!--            </div>-->
+<!--            <div id="inputDescription">-->
+<!--                <textarea id="projectDescription" rows="5" cols="100"></textarea>-->
+<!--            </div>-->
+            <div class="projectInfoItem centerText" style="font-size: 18px">
                 PDX
             </div>
             <div id="pdxBack">
@@ -89,7 +89,7 @@
                 <div class="pdxUpload btn btn-success centerText">上传PDX
                 </div>
             </div>
-            <div class="projectInfoItem centerText" style="font-size: 25px">
+            <div class="projectInfoItem centerText" style="font-size: 18px">
                 VBV
             </div>
             <div class="vbvBack">
@@ -136,7 +136,7 @@
                     </table>
                 </div>
                 <div class="vbvItem" style="font-weight: bold">
-                    VBV名称: <input type="text" size="70" style="margin-left:20px" name="vbvname">
+                    VBV名称: <input type="text" size="70" style="margin-left:20px" name="vbvname" required>
                 </div>
                 <div class="vbvItem" style="font-weight: bold">
                     VBV描述: <input type="text" size="70" style="margin-left:20px" name="vbvname">
@@ -152,7 +152,7 @@
                 <div class="pdxUpload btn btn-success centerText">上传VBV
                 </div>
             </div>
-            <div class="projectInfoItem centerText" style="font-size: 25px">
+            <div class="projectInfoItem centerText" style="font-size: 18px">
                 ZDC
             </div>
             <div class="vbvBack" id="zdcBack">
@@ -209,7 +209,7 @@
                 <div class="pdxUpload btn btn-success centerText">上传ZDC
                 </div>
             </div>
-            <div class="projectInfoItem centerText" style="font-size: 25px">
+            <div class="projectInfoItem centerText" style="font-size: 18px">
                 FLASH
             </div>
             <div class="vbvBack" id="flashBack">
@@ -267,7 +267,7 @@
                 </div>
             </div>
 
-            <div class="pdxUpload btn btn-success centerText" id="projectCommit">保存
+            <div class="pdxUpload btn btn-success centerText" id="projectCommit" onclick="window.location.href='projectDetail.html';">进入项目
             </div>
         </div>
     </div>

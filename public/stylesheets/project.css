@@ -1,208 +1,396 @@
-body
-{
+body {
     background-color: #EFEFEF;
 }
-#projectList{
-        background-color: #EFEFEF;
-        /*background-color:lightgoldenrodyellow;*/
-        width:100%;
-        height:auto;
-        /*height:calc(100vh - 175px);*/
-        margin-top: 20px;
-        display: flex;
-        /*margin-left: 12%;*/
-        /*margin-right:12%;*/
-        /*border-color: #1c5c93;*/
-        /*border-style: dotted;*/
-        /*border-radius: 10px;*/
+
+#projectList {
+     background-color: #EFEFEF;
+     /*background-color:lightgoldenrodyellow;*/
+     width: 100%;
+     height: auto;
+     /*height:calc(100vh - 175px);*/
+     margin-top: 20px;
+     display: flex;
+     /*margin-left: 12%;*/
+     /*margin-right:12%;*/
+     /*border-color: #1c5c93;*/
+     /*border-style: dotted;*/
+     /*border-radius: 10px;*/
+
+ }
+#vehicleList {
+    /*background-color:#b3d7ff;*/
+    /*background-color:lightgoldenrodyellow;*/
+    width: 100%;
+    height: auto;
+    /*height:calc(100vh - 175px);*/
+    margin-top: 20px;
+    display: flex;
+    margin-left: 0px;
+    /*margin-left: 12%;*/
+    /*margin-right:12%;*/
+    /*border-color: #1c5c93;*/
+    /*border-style: dotted;*/
+    /*border-radius: 10px;*/
 
 }
-.projectName{
-        height:150px;
-        /*width: 200px;*/
-        text-align: center;
-        justify-content: center;
-        cursor:pointer;
+.projectName {
+    height: 150px;
+    /*width: 200px;*/
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
 }
-.projectBtn{
-        height:120px;
-        /*width: 200px;*/
-        background: #43cea2;  /* fallback for old browsers */
-        background: -webkit-linear-gradient(to right, #185a9d, #43cea2);  /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-        margin-top: 15px;
-        margin-bottom: 15px;
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        align-items: center; /*定义body的元素垂直居中*/
-        justify-content: center; /*定义body的里的元素水平居中*/
+.vehicleCard {
+    height: 330px;
+    /*width: 200px;*/
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
 }
-#inputDescription{
-        display: flex;
-        align-items: center; /*定义body的元素垂直居中*/
-        justify-content: center; /*定义body的里的元素水平居中*/
+.vehicleInfo {
+    height: 305px;
+    /*width: 200px;*/
+    /*background: #43cea2; !* fallback for old browsers *!*/
+    /*background: -webkit-linear-gradient(to right, #185a9d, #43cea2); !* Chrome 10-25, Safari 5.1-6 *!*/
+    /*background: linear-gradient(to right, #185a9d, #43cea2); !* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ *!*/
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right:auto;
+    border-style: solid;
+    border-width: 6px;
+    /*border-color: darkgreen;*/
+    background-color: white;
+    border-radius: 15px;
+    /*display: flex;*/
+    /*align-items: center; !*定义body的元素垂直居中*!*/
+    /*justify-content: center; !*定义body的里的元素水平居中*!*/
 }
-.centerText{
-        display: flex;
-        align-items: center; /*定义body的元素垂直居中*/
-        justify-content: center; /*定义body的里的元素水平居中*/
-        font-weight: bold;
+.onlineBorder{
+    border-color: green;
+    color:green;
+}
+.offlineBorder{
+    border-color: gray;
+    color:gray;
+}
+.occupiedBorder{
+    border-color: red;
+    color:red;
+}
+.vehicleIcon{
+    height:110px;
+    width: 250px;
+    background-color: #b3d7ff;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pre-series-Number{
+    font-weight: bold;
+    font-size: 25px;
+    /*color: gray;*/
+}
+.projectBtn {
+    height: 120px;
+    /*width: 200px;*/
+    background: #43cea2; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #185a9d, #43cea2); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: center; /*定义body的里的元素水平居中*/
 }
 
-.projectText{
-        margin: auto;
-        font-size: 20px;
-        color:white;
-        font-weight: bold;
-        text-align: center;
-        align-items: center;
+#inputDescription {
+    display: flex;
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: center; /*定义body的里的元素水平居中*/
 }
-#projectTitle{
-        background-color: black;
-        width: 100%;
-        height: 40px;
+
+.centerText {
+    display: flex;
+    align-items: center; /*定义body的元素垂直居中*/
+    justify-content: center; /*定义body的里的元素水平居中*/
+    font-weight: bold;
 }
-#projectInformation{
-        /*background-color: #B0E0E6 ;*/
-        background-color: lightblue;
-        width:100%;
-        height:2000px;
+
+.projectText {
+    margin: auto;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+}
+
+#projectTitle {
+    background-color: #1c5c93;
+    width: 100%;
+    font-size: 20px;
+    color:white;
+    /*height:50px;*/
+    /*font-weight: normal;*/
+}
+
+#projectInformation {
+    /*background-color: #B0E0E6 ;*/
+    /*background-color: lightblue;*/
+    background-image: url("../images/fensui.png");
+    background-color: #0f6674;
+    background-repeat:repeat;
+    /*background-size: contain;*/
+    background-position: top;
+    width: 100%;
+    height: 1850px;
+}
+.mainArea {
+    /*background-color: lightblue;*/
+    /*background-color:lightgoldenrodyellow;*/
+    width: 100%;
+    height: auto;
+    /*height:calc(100vh - 175px);*/
+    margin-top: 20px;
+    /*display: flex;*/
+    /*margin-left: 12%;*/
+    /*margin-right:12%;*/
+    /*border-color: #1c5c93;*/
+    /*border-style: dotted;*/
+    /*border-radius: 10px;*/
 
 }
-.mainArea{
-        background-color: lightblue;
-        /*background-color:lightgoldenrodyellow;*/
-        width:100%;
-        height:auto;
-        /*height:calc(100vh - 175px);*/
-        margin-top: 20px;
-        /*display: flex;*/
-        /*margin-left: 12%;*/
-        /*margin-right:12%;*/
-        /*border-color: #1c5c93;*/
-        /*border-style: dotted;*/
-        /*border-radius: 10px;*/
 
+.projectInfoItem {
+    height: 40px;
+    /*color:#1c5c93;*/
 }
-.projectInfoItem{
-        height:40px;
+
+#projectDescription {
+    height: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
-#projectDescription{
-        height:100px;
-        width:80%;
-        margin-left: auto;
-        margin-right: auto;
+
+#pdxBack {
+    background-color: white;
+    /*width: 80%;*/
+    height: 190px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
+    /*border-color: #7a7a7a;*/
+    /*border-style: solid;*/
+    /*border-width: thin;*/
 }
-#pdxBack{
-        background-color: white;
-        /*width: 80%;*/
-        height:190px;
-        margin-left: 10%;
-        margin-right: 10%;
-        padding-top: 10px;
-        /*border-color: #7a7a7a;*/
-        /*border-style: solid;*/
-        /*border-width: thin;*/
+
+.pdxBackground {
+    /*background-color:lightgray;*/
+    width: 100%;
+    height: 80px;
+    /*margin-left: 10%;*/
+    /*margin-right: 10%;*/
+    display: flex;
+    /*flex-wrap: wrap;*/
+    /*border-color: #7a7a7a;*/
+    /*border-style: solid;*/
+    /*border-width: thin;*/
 }
-.pdxBackground{
-        /*background-color:lightgray;*/
-        width: 100%;
-        height:80px;
-        /*margin-left: 10%;*/
-        /*margin-right: 10%;*/
-        display: flex;
-        /*flex-wrap: wrap;*/
-        /*border-color: #7a7a7a;*/
-        /*border-style: solid;*/
-        /*border-width: thin;*/
+
+.vbvBack {
+    background-color: white;
+    /*width: 80%;*/
+    height: 510px;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding-top: 10px;
 }
-.vbvBack{
-        background-color: white;
-        /*width: 80%;*/
-        height:510px;
-        margin-left: 10%;
-        margin-right: 10%;
-        padding-top: 10px;
+
+#zdcBack {
+    height: 410px;
 }
-#zdcBack{
-        height:410px;
+
+#flashBack {
+    height: 410px;
 }
-#flashBack{
-        height:410px;
-}
+
 .pdxChooseBtn {
-        /*background-color: #1c5c93;*/
-        background-color: white;
-        /*color: white;*/
-        color:#1c5c93;
-        height:38px;
-        width:120px;
-        margin-left:50px;
-        margin-top: 20px;
-        /*font-weight: bold;*/
-        border-color: #1c5c93;
-        /*border-style: groove;*/
-        /*border-width: thick;*/
-        border-radius: 10px;
+    /*background-color: #1c5c93;*/
+    background-color: white;
+    /*color: white;*/
+    color: #1c5c93;
+    height: 38px;
+    width: 120px;
+    margin-left: 50px;
+    margin-top: 20px;
+    /*font-weight: bold;*/
+    border-color: #1c5c93;
+    /*border-style: groove;*/
+    /*border-width: thick;*/
+    border-radius: 10px;
 }
-.pdxUpload{
-        /*background:#155724;  !* fallback for old browsers *!*/
-        width: 160px;
-        height: 38px;
-        background-color: white;
-        color:#28a745;
-        margin: 0 auto;
-        /*font-weight: bold;*/
-        border-radius: 10px;
-        border-color: #28a745;
+
+.pdxUpload {
+    /*background:#155724;  !* fallback for old browsers *!*/
+    width: 160px;
+    height: 38px;
+    background-color: white;
+    color: #28a745;
+    margin: 0 auto;
+    /*font-weight: bold;*/
+    border-radius: 10px;
+    border-color: #28a745;
 }
-.pdxName{
-        border-color: #7a7a7a;
-        border-style: solid;
-        border-width: thin;
-        height:38px;
-        width:70%;
-        background-color: white;
-        margin-top: 20px;
-        margin-left:40px;
+
+.pdxName {
+    border-color: #7a7a7a;
+    border-style: solid;
+    border-width: thin;
+    height: 38px;
+    width: 70%;
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 40px;
 }
-.vbvItem{
-        margin-top: 20px;
-        width: 100%;
-        padding-left: 40px;
+
+.vbvItem {
+    margin-top: 20px;
+    width: 100%;
+    padding-left: 40px;
 }
-.vbvList{
-        height:200px;
+
+.vbvList {
+    height: 200px;
+}
+
+.scrollTbody {
+    display: block;
+    height: 150px;
+    /*overflow: auto;*/
+    overflow-y: scroll;
+}
+
+.table td, .table th {
+    width: 800px;
+    /*border-bottom: none;*/
+    /*border-left: none;*/
+    /*border-right: 1px solid #CCC;*/
+    /*border-top: 1px solid #DDD;*/
+    padding: 2px 3px 3px 4px
+}
+
+#projectCommit {
+    width: 200px;
+    height: 38px;
+    margin-top: 60px;
+    font-weight: bolder;
+    font-size: 20px;
+    color: white;
+    background-color: #1EA73D;
+    /*border-color: green;*/
+    /*!*border-style: groove;*!*/
+    /*border-width: thick;*/
+    /*border-radius: 30px;*/
 
 }
-.scrollTbody{
-        display: block;
-        height:150px;
-        /*overflow: auto;*/
-        overflow-y:scroll;
-}
-.table td,.table th {
-        width: 800px;
-        /*border-bottom: none;*/
-        /*border-left: none;*/
-        /*border-right: 1px solid #CCC;*/
-        /*border-top: 1px solid #DDD;*/
-        padding: 2px 3px 3px 4px
-}
-#projectCommit{
-        width:200px;
-        height:38px;
-        margin-top: 60px;
-        font-weight: bolder;
-        font-size: 20px;
-        color: white;
-        background-color: #1EA73D;
-        /*border-color: green;*/
-        /*!*border-style: groove;*!*/
-        /*border-width: thick;*/
-        /*border-radius: 30px;*/
+#projectOverview{
+    width:100%;
+    height:170px;
+    background-color: white;
+    border-color: white;
+    border-width: thin;
+    border-style: solid;
+    display: flex;
 
+}
+.basicInfo{
+    /*border-color: #7a7a7a;*/
+    /*border-style: solid;*/
+    /*border-width: thin;*/
+    height: 15px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: center;
+    /*font-weight: bold;*/
+    /*background-color: white;*/
+}
+.basicInfoValue{
+    margin-left: 20px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.vehicle-Info-title{
+    /*border-color: #7a7a7a;*/
+    /*border-style: solid;*/
+    /*border-width: thin;*/
+    height: 15px;
+    width: 120px;
+    font-size: 15px;
+    font-weight: bold;
+    align-items: normal;
+    /*align-items: center;*/
+    /*font-weight: bold;*/
+    /*background-color: white;*/
+}
+.vehicle-Info-Item{
+    display: flex;
+    /*width: 70%;*/
+    margin-left: 0px;
+    margin-top: 5px;
+    font-size: 5px;
+    color: gray;
+}
+.vehicle-Info-value{
+    margin-left: 0px;
+    font-size: 15px;
+    font-weight: normal;
+}
+.projectBasicInformation{
+    display: flex;
+    /*width: 70%;*/
+    margin-left: 40px;
+    margin-top: 15px;
+    /*color: #808080;*/
+    color:gray;
+    /*align-items: center;*/
+}
+
+#editProject{
+    width: 140px;
+    margin-top: auto;
+    margin-bottom: auto;
+    /*margin-left: auto;*/
+    /*margin-right: auto;*/
+    margin-right: 15px;
+}
+.projectBasicInfoText{
+    width:70%;
+    height:100%;
+    /*background-color: #b3d7ff;*/
+    color: black;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+#projectEditBtn{
+    /*background-color: #b3d7ff;*/
+    width: 250px;
+    margin-left: 10px;
+    display: flex;
+}
+#pre-series-Number-Area{
+    display: flex;
+    height:50px;
+
+}
+#editVehicle{
+    width:140px;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 250px;
 }
 /*#Introduction{*/
 /*    height:30%;*/
